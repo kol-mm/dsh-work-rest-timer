@@ -9,7 +9,7 @@
 
 ## 截图
 
-![工作 / 休息计时器界面（占位图，请替换为真实截图）](./docs/screenshots/screenshot.svg)
+![工作 / 休息计时器界面（工作 25:00 / 休息 05:00）](./docs/screenshots/screenshot.png)
 
 ## 简介
 
@@ -81,10 +81,11 @@
 work-rest-timer/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml              # GitHub Actions 自动校验
+│       ├── ci.yml              # GitHub Actions 自动校验
+│       └── release.yml         # 打 tag 自动发布 Release
 ├── docs/
 │   └── screenshots/
-│       └── screenshot.svg      # 界面截图（占位）
+│       └── screenshot.png      # 界面截图
 ├── scripts/
 │   └── validate.js             # 插件源码语法/结构校验脚本
 ├── README.md                   # 中文说明

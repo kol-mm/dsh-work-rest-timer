@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-![Work-Rest Timer UI (placeholder — replace with a real screenshot)](./docs/screenshots/screenshot.svg)
+![Work-Rest Timer UI (work 25:00 / rest 05:00)](./docs/screenshots/screenshot.png)
 
 ## Overview
 
@@ -81,10 +81,11 @@ This plugin is a DSH **dynamic Cordis plugin (Client-only)**:
 work-rest-timer/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml              # GitHub Actions CI
+│       ├── ci.yml              # GitHub Actions CI
+│       └── release.yml         # release on tag
 ├── docs/
 │   └── screenshots/
-│       └── screenshot.svg      # UI screenshot (placeholder)
+│       └── screenshot.png      # UI screenshot
 ├── scripts/
 │   └── validate.js             # syntax / structure validation script
 ├── README.md                   # Chinese README
