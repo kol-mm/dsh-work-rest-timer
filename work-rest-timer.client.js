@@ -38,6 +38,8 @@ return {
       '.wrt-toggle:checked{background:var(--dsw-alias-brand-primary,#4f8cff)}' +
       '.wrt-toggle::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:left .2s}' +
       '.wrt-toggle:checked::after{left:18px}' +
+      '.wrt-try{background:none;border:1px solid var(--dsw-alias-border-l2,rgba(255,255,255,.18));border-radius:6px;color:var(--dsw-alias-brand-primary,#4f8cff);padding:4px 8px;font-size:11px;cursor:pointer;flex:none}' +
+      '.wrt-try:hover{background:var(--dsw-alias-bg-layer-2,rgba(255,255,255,.1))}' +
       '.wrt-pill{display:flex;align-items:center;gap:8px;padding:8px 14px;background:var(--dsw-alias-bg-overlay,#1e1f24);color:var(--dsw-alias-label-primary,#e8e8ea);border:1px solid var(--dsw-alias-border-l1,rgba(255,255,255,.14));border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.28);cursor:pointer;font-size:13px;font-variant-numeric:tabular-nums}' +
       '.wrt-pill-dot{width:8px;height:8px;border-radius:50%;background:var(--dsw-alias-state-success-primary,#2ecc71);flex:none}' +
       '.wrt-pill[data-phase="rest"] .wrt-pill-dot{background:var(--dsw-alias-state-warn-primary,#f5a623)}'
@@ -165,6 +167,12 @@ return {
         setRunning(false)
       }
 
+      function preview() {
+        unlockAudio()
+        speak('试音成功，这是语音提醒的声音')
+        beep(1)
+      }
+
       function changeWork(v) {
         const n = Math.max(1, Math.min(600, parseInt(v, 10) || 1))
         setWorkMin(n)
@@ -215,7 +223,10 @@ return {
             ),
             React.createElement('div', { className: 'wrt-row' },
               React.createElement('span', null, '语音提醒'),
-              React.createElement('input', { className: 'wrt-toggle', type: 'checkbox', checked: voiceOn, onChange: (ev) => setVoiceOn(ev.target.checked) }),
+              React.createElement('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } },
+                React.createElement('button', { className: 'wrt-try', title: '测试语音', onClick: preview }, '试音'),
+                React.createElement('input', { className: 'wrt-toggle', type: 'checkbox', checked: voiceOn, onChange: (ev) => setVoiceOn(ev.target.checked) }),
+              ),
             ),
             React.createElement('div', { className: 'wrt-row' },
               React.createElement('span', null, '自动循环'),

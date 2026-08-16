@@ -25,6 +25,7 @@ It lives as a small floating card pinned to the bottom-right corner, always show
 
 - ⏱️ **Countdown**: large `MM:SS` countdown with a colored progress bar (work = green, rest = orange).
 - 🔊 **Voice reminders**: speaks Chinese aloud when a phase ends, accompanied by a short chime.
+- 🎵 **Voice preview**: a one-click preview in settings to test the reminder voice.
 - ⚙️ **Configurable durations**: work and rest lengths are both adjustable (1–600 minutes).
 - 🔁 **Auto-loop**: automatically switches between work and rest (can be disabled).
 - ▶️ **Controls**: start / pause, reset, skip.
@@ -38,7 +39,7 @@ It lives as a small floating card pinned to the bottom-right corner, always show
 | Countdown | Large `MM:SS`, refreshed every second |
 | Progress bar | Elapsed / remaining ratio of the current phase |
 | Controls | Start / pause, reset, skip |
-| Settings (⚙) | Work duration, rest duration, voice reminder, auto-loop |
+| Settings (⚙) | Work duration, rest duration, voice reminder (with preview), auto-loop |
 | Collapse (–) | Shrink into a bottom-right pill; click to expand again |
 
 ## Quick start
