@@ -3,7 +3,7 @@
 > 一个悬浮的番茄钟式提醒工具，运行在 DeepSeek Harness（DSH）的浏览器客户端里。到时间会用中文语音提醒你休息或开始工作。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![CI](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml/badge.svg)](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml)
+[![CI](https://github.com/kol-mm/dsh-work-rest-timer/actions/workflows/ci.yml/badge.svg)](https://github.com/kol-mm/dsh-work-rest-timer/actions/workflows/ci.yml)
 
 **语言 / Language**：[中文](./README.md) · [English](./README.en.md)
 

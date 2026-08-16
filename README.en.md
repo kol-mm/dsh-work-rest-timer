@@ -3,7 +3,7 @@
 > A floating Pomodoro-style reminder that runs in the DeepSeek Harness (DSH) browser client and speaks a Chinese voice reminder when it's time to rest or get back to work.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![CI](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml/badge.svg)](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml)
+[![CI](https://github.com/kol-mm/dsh-work-rest-timer/actions/workflows/ci.yml/badge.svg)](https://github.com/kol-mm/dsh-work-rest-timer/actions/workflows/ci.yml)
 
 **Language**：[中文](./README.md) · [English](./README.en.md)
 
