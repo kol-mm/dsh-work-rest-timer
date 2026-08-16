@@ -3,6 +3,13 @@
 > 一个悬浮的番茄钟式提醒工具，运行在 DeepSeek Harness（DSH）的浏览器客户端里。到时间会用中文语音提醒你休息或开始工作。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml/badge.svg)](https://github.com/kol-mm/work-rest-timer/actions/workflows/ci.yml)
+
+**语言 / Language**：[中文](./README.md) · [English](./README.en.md)
+
+## 截图
+
+![工作 / 休息计时器界面（占位图，请替换为真实截图）](./docs/screenshots/screenshot.svg)
 
 ## 简介
 
@@ -72,9 +79,19 @@
 
 ```
 work-rest-timer/
-├── README.md                    # 项目说明
-├── LICENSE                      # MIT 许可证
-└── work-rest-timer.client.js    # 插件 Client 端源码
+├── .github/
+│   └── workflows/
+│       └── ci.yml              # GitHub Actions 自动校验
+├── docs/
+│   └── screenshots/
+│       └── screenshot.svg      # 界面截图（占位）
+├── scripts/
+│   └── validate.js             # 插件源码语法/结构校验脚本
+├── README.md                   # 中文说明
+├── README.en.md                # English README
+├── LICENSE                     # MIT 许可证
+├── .gitignore
+└── work-rest-timer.client.js   # 插件 Client 端源码
 ```
 
 ## 常见问题（FAQ）
